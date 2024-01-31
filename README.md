@@ -28,7 +28,7 @@ To run the Contract Visitor script, use the following command:
 $ python3 contract_visitor.py
 ```
 
-To run the HeuristiRules script run the command:
+To run the Heuristic Rules script run the command:
 ```
 $ python3 HR.py
 ```# SolBench
