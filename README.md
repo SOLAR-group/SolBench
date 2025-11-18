@@ -14,9 +14,11 @@ $ lz4 -d datasol.tar.lz4
 ```
 
 The `src` folder contains the scripts of our tool:
+ - `delete_comments.py` : delete comments from smart contract's source code
  - `contract_vistor.py` : which takes as input every contract of the sample folder and extract each error-handling feature.
  - `HR.py` : which finds *external calls, function arguments, external contract creation, revert statement-function, division by zero, enum type conversion, overflows/underflows, division by zero*.
  - `fetchdata.py` : the script to collect contracts from etherscan.
+ - `ast_detector.py` : produce the AST of the smart contract and find Error Handling instances.
 
 Note that the scripts take as input the the contracts from the `sample` folder.
 
@@ -28,7 +30,17 @@ To run the Contract Visitor script, use the following command:
 $ python3 contract_visitor.py
 ```
 
-To run the Heuristic Rules script run the command:
+To run the HeuristiRules script run the command:
 ```
 $ python3 HR.py
-```# SolBench
+```
+
+To run the Error Messages detector script run the command:
+```
+$ python eh_messages.py --directory ./dataset/sample
+```
+
+To run the SMTChecker detector for a file run the command:
+```
+$ python3 smtchecker_found.py --file ./dataset/sample/0xfd1d97f0d8b100a9df095b40a13520af13df7ec1.sol
+```
