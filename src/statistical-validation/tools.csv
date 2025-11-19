@@ -1,0 +1,13 @@
+Tool,ECall,FAA,ECon,AA,PA,DZ
+Slither,33,32,1,13,2,6
+Securify2,0,32,0,0,0,6
+SmartCheck,6,0,0,4,2,6
+Solhint,22,0,0,0,0,0
+Ethlint,3,0,0,4,0,0
+Mythril,16,41,0,0,0,0
+Manticore,5,0,0,0,0,0
+Oyente,4,0,0,0,0,0
+Maian,0,0,0,0,0,0
+Confuzzius,0,0,0,0,0,3
+sFuzz,0,0,0,0,0,2
+
